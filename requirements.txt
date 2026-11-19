@@ -1,0 +1,7 @@
+# Core runtime dependencies of CoDARec.
+# Install PyTorch first with the wheel that matches your hardware, e.g.
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=1.12
+numpy>=1.21
+scipy>=1.7

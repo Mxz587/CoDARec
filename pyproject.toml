@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codarec"
+version = "1.0.0"
+description = "CoDARec: Co-evolutionary Diffusion-Augmented Recommendation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "torch>=1.12",
+    "numpy>=1.21",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+dev = ["flake8>=6", "pyflakes>=3"]
+
+[project.urls]
+Homepage = "https://github.com/Mxz587/CoDARec"
+Repository = "https://github.com/Mxz587/CoDARec"
+Issues = "https://github.com/Mxz587/CoDARec/issues"
+
+[tool.setuptools.packages.find]
+include = ["codarec*"]
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = ["E203", "W503"]
+exclude = [".git", "__pycache__", "build", "dist", "checkpoints", "logs"]

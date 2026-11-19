@@ -1,0 +1,16 @@
+# Normalise text files to LF; keep binary artefacts untouched.
+* text=auto eol=lf
+
+*.py    text
+*.md    text
+*.yml   text
+*.yaml  text
+*.toml  text
+*.txt   text
+*.json  text
+
+*.npy   binary
+*.pth   binary
+*.png   binary
+*.jpg   binary
+*.pdf   binary
